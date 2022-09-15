@@ -27,7 +27,7 @@ export const instantiateServer = (customConfig = {}) =>
 export async function startServer(server = instantiateServer(), customPort) {
     try {
         const port = customPort || getConfig('apolloPort');
-        var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+        var server_port = 4000 || process.env.PORT || 80;
         var server_host = process.env.YOUR_HOST || '0.0.0.0';
     
 
