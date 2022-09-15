@@ -10,7 +10,8 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import { startServer } from './server';
 import { createDatabaseConnection, closeDatabaseConnection } from './database';
-
+startServer();
+createDatabaseConnection();
 
 const logger = pino({ level: process.env.LOG_LEVEL || 'info' });
 const expressLogger = expressPino({ logger });
@@ -65,7 +66,6 @@ app.listen(PORT, () => {
 });
 
 
-startServer();
-createDatabaseConnection();
+
 
 export default app;
