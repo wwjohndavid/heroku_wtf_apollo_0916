@@ -61,9 +61,9 @@ if (process.env.NODE_ENV === 'test') {
   PORT = process.env.PORT || 4000;
 }
 
-app.listen(PORT, () => {
-  logger.info(`Server started on port ${PORT}...`);
-});
+// app.listen(PORT, () => {
+//   logger.info(`Server started on port ${PORT}...`);
+// });
 
 
 
