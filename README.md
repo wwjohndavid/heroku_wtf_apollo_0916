@@ -1,3 +1,5 @@
+World Texting Foundation
+World Texting Foundation messaging acronyms Restful API.
 # list
 query {
   acronyms{
@@ -20,7 +22,7 @@ mutation{
   }
 }
 
-#delete
+# delete
 mutation{
   removeAcronym(acronym: "hhh12"){
     acronym
@@ -28,24 +30,3 @@ mutation{
   }
 }
 
-#example Answer
-{
-  "data": {
-    "removeAcronym": {
-      "acronym": null,
-      "definition": null
-    }
-  }
-}
-
-API Endpoints
-Request headers:
-Content-Type: application/json
-Authorization: Bearer<space>token
-
-GET /acronym?from=50&limit=10&search=:search   List acronyms
-POST /acronym   Create an acronym
-PUT /acronym/:id   Edit an acronym
-DELETE /acronym   Delete an acronym
-
-https://heroku0916wtfapollo.herokuapp.com/
