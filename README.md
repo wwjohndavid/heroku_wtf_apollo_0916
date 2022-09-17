@@ -47,3 +47,5 @@ GET /acronym?from=50&limit=10&search=:search   List acronyms
 POST /acronym   Create an acronym
 PUT /acronym/:id   Edit an acronym
 DELETE /acronym   Delete an acronym
+
+https://heroku0916wtfapollo.herokuapp.com/
